@@ -13,12 +13,9 @@ A regex is a sequence of characters that defines a search pattern. In this speci
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 There are multiple components of regular expressions.
@@ -90,9 +87,6 @@ The (s) flag is the dot-all flag allowing the . metacharacter to match any chara
 (u) is the unicode flag enabling full unicode support for the regex.
 
 The sticky flag (y) restricts the mathcing process to the index specified by the 'lastIndex' property of the regex object.
-### Grouping and Capturing
-
-### Bracket Expressions
 
 ### Greedy and Lazy Match
 Greedy Match is the default for quantifiers meaning they try to match as much of the input text as possible while still allowing the overall pattern to match. Greedy Quantifiers are represented by *, +, and ? and as such will match as many occurences as possible before considering the match complete.
@@ -111,7 +105,6 @@ Back references allow you to refer back to capturing groups within the regex pat
 
 First we need a capturing group. To create one you enclose a part of the regex in parentheses (). When the regex matches the text the content captured is stored in memory.
 After a capturing group has been created you can reference the captured content using a back-reference. For example given the regex /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ the back-reference \1 would refer to the content captured by the first capturing group which would be ([a-z0-9_\.-]+) a back-reference of \2 would refer to the content captured by the second capturing group ([\da-z\.-]+).
-### Look-ahead and Look-behind
-
 ## Author
 Hello I am the author of the gist my name is John. I hope you found this helpful and if there is anything I missed or you think I should add please let me know.
+Profile Page: https://github.com/MilkyRamen
